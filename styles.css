@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro {
+    justify-content: space-between;
+    background-image: url(./images/john-moeses-bauan-OGZtQF8iC0g-unsplash.jpg);
+    background-size: cover;
+    background-color: #3f3f3f;
+    background-blend-mode: multiply;
+    
+    height: 350px;
+}
+
+/* Typography */
+
+h1 {
+    font-size: 2.3rem;
+    font-weight: 300;
+    max-width: 500px;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+.intro-top-text {
+    color: #38ED28;
+    font-size: .8rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-top: 5px solid;
+    border-image: linear-gradient(to right,#38ED28, #720FB5) 1;
+    padding-top: .5em;
+    margin: 0 auto;
+}
+
+.intro-subtitle {
+    color: #38ED28;
+    font-size: 1.5rem;
+    margin-bottom: .5em;
+    text-transform: uppercase;
+}
+
+.content-title {
+    margin-top: 1em;
+}
+
+.content-subtitle {
+    margin-bottom: 2em;
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #38ED28;
+}
+
+.content-text {
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: 1em;
+}
+
+.info {
+    font-size: .6rem;
+    opacity: .6;
+    margin-bottom: 3em;
+    max-width: 50%;
+}
+
+
+/* Form */ 
+
+.email-collector {
+    width: 60%;
+    max-width: 300px;
+}
+
+input {
+    width: 100%;
+    color: inherit;
+    text-align: inherit;
+    font-family: inherit;
+    font-size: 1.1rem;
+    padding: .4em;
+    margin-bottom: 1em;
+    background-color: #1a1a1a;
+    border: solid 2px #fff;
+    border-radius: 10px;
+    transition: transform 250ms;
+}
+
+input:focus {
+    transform: scale(1.05);
+}
+
+.btn {
+    cursor: pointer;
+    color: #fff;
+    font-family: inherit;
+    font-size: .8rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 1em 0;
+    margin-bottom: 1em;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #38ED28, #720FB5);
+ 
+    transition: transform 250ms;
+}
+
+.btn:hover,
+.btn:focus {
+    transform: scale(1.05);
+    background-image: linear-gradient(#38ED28, #38ED28);
+}
+
+/* Desktop */
+
+@media (min-width: 700px) {
+    body {
+        flex-direction: row;
+    }
+
+    .container {
+        min-height: 100vh;
+        width: 50%;
+        padding: 0 1em;
+        justify-content: center;
+    }
+
+    .intro {
+        justify-content: space-between;
+    }
+}
+
